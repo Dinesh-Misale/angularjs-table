@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+​
+<div ng-app="myApp" ng-controller="myCtrl">
+    <form>
+        <table >
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Link</th>
+                <th>Category</th>
+                <th>API</th>
+            </tr>
+            </thead>
+​
+            <tbody>
+            <tr ng-repeat="x in data" >
+                
+                <td>{{x.Description}}</td>
+                <td><a href={{x.Link}}>{{x.Link}}</a></td>
+                <td>{{x.Category}}</td>
+                <td>{{x.API }}</td>
+            </tr>
+            </tbody> 
+        </table>
+        
+    </form>
+</div>
+​
+​
+​
+</body>
+<script src="./controller.js" ></script>
+<script src="./service.js" ></script>
+</html>
+
